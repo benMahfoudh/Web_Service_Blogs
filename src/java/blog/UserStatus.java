@@ -8,6 +8,11 @@ package blog;
  *
  * @author Mehdi
  */
-public class UserStatus {
-    
+public enum UserStatus {
+    ENABLE(0),
+    DISABLED(1);
+    UserStatus(int val){
+        this.val = val;
+    }
+    int val;
 }

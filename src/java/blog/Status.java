@@ -8,6 +8,12 @@ package blog;
  *
  * @author Mehdi
  */
-public class Status {
-    
+public enum Status {
+    Published(0), 
+    ReportAsAbused(1),
+    WaitForValidation(2);
+    Status(int val) {
+        this.val = val;
+    }
+    int val;
 }
